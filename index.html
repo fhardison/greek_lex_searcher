@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/style.css"/>
+		<!-- <script type="text/javascript" src="js/fuse.basic.min.js"></script> -->
+		<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+		<script  type="module" type="text/javascript" src="js/main.js"></script>
+	</head>
+	<body>
+		<main>
+			<div id="searchbar">
+				<input type="text" id="search"  placeholder="Search...">
+				<button id="searchBtn" onClick="doSearch();">Go</button>
+			</div>
+			<div id="data-display"></div>
+		</main>
+		<script>
+			const searchBox = document.getElementById('search');
+			const dataHolder = document.getElementById('data-display');
+
+			function doSearch() {
+				search(searchBox, dataHolder);	
+			}
+		</script>
+<style>
+	</style>
+	</body>
+</html>
