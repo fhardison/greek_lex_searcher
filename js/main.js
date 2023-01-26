@@ -1,11 +1,12 @@
-import * as  data  from '../static/dict_data.js';
+import { getDicts}  from '../static/dict_data.js';
 
+const  data = getDicts();
 
 function prepDicts() {
 	let out = {};
 	console.log('starting data prep');
-	for (let d in data.dicts) {
-		out[d] = new Fuse(Object.keys(data.dicts[d]), {includeScore: false, threshold: 0.008, location:0, distance:200, ignoreLocation:true, useExtendedSearch:true});
+	for (let d in data) {
+		out[d] = new Fuse(Object.keys(data[d]), {includeScore: false, threshold: 0.008, location:0, distance:200, ignoreLocation:true, useExtendedSearch:true});
 	}
 
 	return out;
@@ -25,7 +26,7 @@ function search(searchBox, elem) {
 				elem.innerHTML += "<h2>" + d + "</h2>";
 				console.log(res);
 				for (let key in res) {
-					elem.innerHTML += "<p><strong>" + res[key].item + "</strong>: " + data.dicts[d][res[key].item] + "</p>";
+					elem.innerHTML += "<p><strong>" + res[key].item + "</strong>: " + data[d][res[key].item] + "</p>";
 				}
 			}
 			results.push([d, mydata[d].search(target)])
