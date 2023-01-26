@@ -28,7 +28,7 @@ function search(searchBox, elem) {
 				console.log(res);
 				for (let key in res) {
 					console.log(res[key].item);
-					elem.innerHTML += "<p>" + res[key].item + ": " + data.dicts[d][res[key].item] + "</p>";
+					elem.innerHTML += "<p><strong>" + res[key].item + "</strong>: " + data.dicts[d][res[key].item] + "</p>";
 				}
 			}
 			results.push([d, mydata[d].search(target)])
