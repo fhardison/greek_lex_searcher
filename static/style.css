@@ -1,0 +1,51 @@
+#search {
+	padding: 6px;
+	border: none;
+	font-size: 16px;
+	margin:1em auto;
+}
+html {width:100%;
+margin:0;
+padding:0;}
+body {
+	width: 100%; 
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	margin:auto;
+	width:50%;
+}
+header {
+	background: lightgray;
+	position:fixed;
+	top: 0;
+	width:100%;
+	display:flex; 
+	align-items: center;
+	justify-content: center;
+}
+#search-field {
+	min-height:2em;
+}
+#searchbar {
+	margin: 0.5em auto;
+
+}
+
+#data-display {
+	margin-top: 24px;
+}
+
+#searchBtn {
+	min-height: 2em;
+	padding 0 0.5em;
+}
+
+main {
+	margin-top:5em;
+}
+h2 {
+	display: sticky;
+}
