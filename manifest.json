@@ -1,7 +1,7 @@
 {
     "name":"Greek lex searcher",
     "short_name":"Lex searcher",
-    "start_url":"index.html",
+    "start_url":"./index.html",
     "display":"standalone",
     "background_color":"#5900b3",
     "theme_color":"black",
@@ -9,12 +9,12 @@
     "description":"This is simple PWA to search multiple Ancient Greek lexicons",
     "icons":[
     {
-    "src":"icon-192x192.png",                     
+    "src":"./icon-192x192.png",                     
     "sizes":"192x192",
     "type":"image/png"
     },
     {
-    "src":"icon-512x512.png",
+    "src":"./icon-512x512.png",
     "sizes":"512x512",
     "type":"image/png"
     }
