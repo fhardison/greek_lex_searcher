@@ -1,5 +1,5 @@
 var staticCacheName = "pwa";
-var ghpath = "/greek_lex_searher"; 
+var ghpath = "/greek_lex_searcher"; 
 self.addEventListener("install", function (e) {
   e.waitUntil(
     caches.open(staticCacheName).then(function (cache) {
