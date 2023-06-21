@@ -1,7 +1,8 @@
 {
     "name":"Greek lex searcher",
     "short_name":"Lex searcher",
-    "start_url":"./index.html",
+    "start_url":"/greek_lex_searcher/",
+    "scope": "/greek_lex_searcher/",
     "display":"standalone",
     "background_color":"#5900b3",
     "theme_color":"black",
