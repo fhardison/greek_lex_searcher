@@ -3,7 +3,7 @@ var ghpath = "/greek_lex_searcher";
 self.addEventListener("install", function (e) {
   e.waitUntil(
     caches.open(staticCacheName).then(function (cache) {
-      return cache.addAll([`${ghpath}/index.html`, `${ghpath}/static/style.css`, `${ghpath}/static/dict_data.js`, `${ghpath}/yew-app-6df...d54)bg.wasm`, `${ghpath}/yew-app-6df...3583ec8d54.js`]);
+      return cache.addAll([`${ghpath}/index.html`, `${ghpath}/static/style.css`, `${ghpath}/static/dict_data.js`, `${ghpath}/yew-app-6df4d73583ec8d54_bg.wasm`, `${ghpath}/yew-app-6df4d73583ec8d54.js`]);
     })
   );
 });
