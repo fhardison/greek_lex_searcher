@@ -6,7 +6,6 @@
     "display":"standalone",
     "background_color":"#5900b3",
     "theme_color":"black",
-    "scope": ".",
     "description":"This is simple PWA to search multiple Ancient Greek lexicons",
     "icons":[
     {
