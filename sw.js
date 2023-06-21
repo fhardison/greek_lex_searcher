@@ -1,9 +1,9 @@
 var staticCacheName = "pwa";
- 
+var ghpath = "/greek_lex_searher"; 
 self.addEventListener("install", function (e) {
   e.waitUntil(
     caches.open(staticCacheName).then(function (cache) {
-      return cache.addAll(["index.html", "./static/style.css", "./static/dict_data.js", "yew-app-6df...d54)bg.wasm", "yew-app-6df...3583ec8d54.js"]);
+      return cache.addAll([`${ghpath}/index.html`, `${ghpath}/static/style.css`, `${ghpath}/static/dict_data.js`, `${ghpath}/yew-app-6df...d54)bg.wasm`, `${ghpath}/yew-app-6df...3583ec8d54.js`]);
     })
   );
 });
