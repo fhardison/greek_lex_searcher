@@ -1,11 +1,39 @@
 <!DOCTYPE html><html lang="en"><head>
 		<base href="./greek_lex_searcher">
+         <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+  <meta charset="utf-8">:
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
+		 <meta name=
+  "apple-mobile-web-app-status-bar"
+        content="#aa7700">
+  <meta name="theme-color"
+        content="black">
+  <link rel="manifest" href="manifest.json" >
 		<link rel="stylesheet" href="./static/style.css">
 	
 <link rel="preload" href="./yew-app-6df4d73583ec8d54_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
 <link rel="modulepreload" href="./yew-app-6df4d73583ec8d54.js"></head>
 	<body>
 
-<script type="module">import init from './yew-app-6df4d73583ec8d54.js';init('./yew-app-6df4d73583ec8d54_bg.wasm');</script></body></html>
+<script type="module">import init from './yew-app-6df4d73583ec8d54.js';init('./yew-app-6df4d73583ec8d54_bg.wasm');
+
+ window.addEventListener('load', () => {
+      registerSW();
+    });
+ 
+    // Register the Service Worker
+    async function registerSW() {
+      if ('serviceWorker' in navigator) {
+        try {
+          await navigator
+                .serviceWorker
+                .register('sw.js');
+        }
+        catch (e) {
+          console.log('SW registration failed');
+        }
+      }
+    }
+</script></body></html>
